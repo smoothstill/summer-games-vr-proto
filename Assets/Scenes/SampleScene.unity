@@ -2013,7 +2013,7 @@ GameObject:
   - component: {fileID: 1485763422}
   - component: {fileID: 1485763421}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Pushable Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 1589830023}
   - component: {fileID: 1589830022}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Grabbable Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2460,7 +2460,7 @@ GameObject:
   - component: {fileID: 2014855527}
   - component: {fileID: 2014855526}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
