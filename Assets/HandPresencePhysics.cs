@@ -7,6 +7,7 @@ public class HandPresencePhysics : MonoBehaviour
 
     public Transform target;
     private Rigidbody rb;
+    private bool isGrabbed = false;
     public Renderer nonPhysicalHand;
     public float showNonPhysicalHandDistance = 0.05f;
     private Collider[] handColliders;
@@ -20,19 +21,24 @@ public class HandPresencePhysics : MonoBehaviour
 
     public void EnableHandCollider()
     {
-        foreach (var item in handColliders)
+        if (!isGrabbed)
         {
-            item.enabled = true;
+            foreach (var item in handColliders)
+            {
+                item.enabled = true;
+            }
         }
     }
 
     public void EnableHandColliderDelay(float delay)
     {
+        isGrabbed = false;
         Invoke("EnableHandCollider", delay);
     }
 
     public void DisableHandCollider()
     {
+        isGrabbed = true;
         foreach (var item in handColliders)
         {
             item.enabled = false;
